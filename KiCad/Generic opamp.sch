@@ -1,0 +1,352 @@
+EESchema Schematic File Version 2
+LIBS:Generic opamp-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Generic opamp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Zeus"
+Date "2017-12-22"
+Rev "1.0.0"
+Comp "AVO Electronics"
+Comment1 "Cameron Belt"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R Z4
+U 1 1 5674581D
+P 4400 3700
+F 0 "Z4" V 4480 3700 50  0000 C CNN
+F 1 "R" V 4400 3700 50  0001 C CNN
+F 2 "" V 4330 3700 30  0000 C CNN
+F 3 "" H 4400 3700 30  0000 C CNN
+	1    4400 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R Z9
+U 1 1 5674585C
+P 5450 4500
+F 0 "Z9" V 5530 4500 50  0000 C CNN
+F 1 "R" V 5450 4500 50  0001 C CNN
+F 2 "" V 5380 4500 30  0000 C CNN
+F 3 "" H 5450 4500 30  0000 C CNN
+	1    5450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Z3
+U 1 1 56745880
+P 6750 3150
+F 0 "Z3" V 6830 3150 50  0000 C CNN
+F 1 "R" V 6750 3150 50  0001 C CNN
+F 2 "" V 6680 3150 30  0000 C CNN
+F 3 "" H 6750 3150 30  0000 C CNN
+	1    6750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R Z7
+U 1 1 56745900
+P 5150 3900
+F 0 "Z7" V 5230 3900 50  0000 C CNN
+F 1 "R" V 5150 3900 50  0001 C CNN
+F 2 "" V 5080 3900 30  0000 C CNN
+F 3 "" H 5150 3900 30  0000 C CNN
+	1    5150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R Z10
+U 1 1 56745928
+P 4750 5100
+F 0 "Z10" V 4830 5100 50  0000 C CNN
+F 1 "R" V 4750 5100 50  0001 C CNN
+F 2 "" V 4680 5100 30  0000 C CNN
+F 3 "" H 4750 5100 30  0000 C CNN
+	1    4750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Z6
+U 1 1 5674597D
+P 4400 3900
+F 0 "Z6" V 4480 3900 50  0000 C CNN
+F 1 "R" V 4400 3900 50  0001 C CNN
+F 2 "" V 4330 3900 30  0000 C CNN
+F 3 "" H 4400 3900 30  0000 C CNN
+	1    4400 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R Z8
+U 1 1 567459A8
+P 6750 4450
+F 0 "Z8" V 6830 4450 50  0000 C CNN
+F 1 "R" V 6750 4450 50  0001 C CNN
+F 2 "" V 6680 4450 30  0000 C CNN
+F 3 "" H 6750 4450 30  0000 C CNN
+	1    6750 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R Z2
+U 1 1 567459E6
+P 5450 3050
+F 0 "Z2" V 5530 3050 50  0000 C CNN
+F 1 "R" V 5450 3050 50  0001 C CNN
+F 2 "" V 5380 3050 30  0000 C CNN
+F 3 "" H 5450 3050 30  0000 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Z5
+U 1 1 56745A17
+P 5150 3700
+F 0 "Z5" V 5230 3700 50  0000 C CNN
+F 1 "R" V 5150 3700 50  0001 C CNN
+F 2 "" V 5080 3700 30  0000 C CNN
+F 3 "" H 5150 3700 30  0000 C CNN
+	1    5150 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3700 5000 3700
+Wire Wire Line
+	4550 3900 5000 3900
+Wire Wire Line
+	5300 3700 5600 3700
+Wire Wire Line
+	5300 3900 5600 3900
+Wire Wire Line
+	5450 3200 5450 3700
+Connection ~ 5450 3700
+Wire Wire Line
+	4750 2700 4750 3700
+Connection ~ 4750 3700
+Wire Wire Line
+	4750 3900 4750 4950
+Connection ~ 4750 3900
+Wire Wire Line
+	5450 3900 5450 4350
+Connection ~ 5450 3900
+$Comp
+L Switch_SPDT_x2 SW1
+U 1 1 56746253
+P 6050 3150
+F 0 "SW1" H 5850 3300 50  0000 C CNN
+F 1 "Switch_SPDT_x2" H 5800 3000 50  0001 C CNN
+F 2 "" H 6050 3150 60  0000 C CNN
+F 3 "" H 6050 3150 60  0000 C CNN
+	1    6050 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch_SPDT_x2 SW1
+U 2 1 567462AF
+P 6000 4450
+F 0 "SW1" H 5800 4600 50  0000 C CNN
+F 1 "Switch_SPDT_x2" H 5750 4300 50  0001 C CNN
+F 2 "" H 6000 4450 60  0000 C CNN
+F 3 "" H 6000 4450 60  0000 C CNN
+	2    6000 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3250 5450 3250
+Connection ~ 5450 3250
+Wire Wire Line
+	6600 3150 6350 3150
+Wire Wire Line
+	6200 3800 7000 3800
+Wire Wire Line
+	7000 3150 7000 4450
+Wire Wire Line
+	7000 3150 6900 3150
+Wire Wire Line
+	7000 4450 6900 4450
+Connection ~ 7000 3800
+Wire Wire Line
+	6300 4450 6600 4450
+Wire Wire Line
+	5700 4350 5700 4200
+Wire Wire Line
+	5700 4200 5450 4200
+Connection ~ 5450 4200
+Wire Wire Line
+	5750 3050 5750 2750
+Wire Wire Line
+	5750 2750 4750 2750
+Connection ~ 4750 2750
+Wire Wire Line
+	5700 4550 5700 4750
+Wire Wire Line
+	5700 4750 4750 4750
+Connection ~ 4750 4750
+$Comp
+L LM741 U?
+U 1 1 5A3DA844
+P 5900 3800
+F 0 "U?" H 5900 4050 50  0000 L CNN
+F 1 "LM741" H 5900 3950 50  0000 L CNN
+F 2 "" H 5950 3850 50  0001 C CNN
+F 3 "" H 6050 3950 50  0001 C CNN
+	1    5900 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3700 0    60   Input ~ 0
+Z4_io
+Text GLabel 5450 2900 0    60   Input ~ 0
+Z2_io
+Text GLabel 4250 3900 0    60   Input ~ 0
+Z6_io
+Text GLabel 4750 5250 0    60   Input ~ 0
+Z10_io
+Text GLabel 5450 4650 0    60   Input ~ 0
+Z9_io
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DAFE9
+P 4950 2600
+F 0 "J?" H 4950 2800 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 4950 2400 50  0000 C CNN
+F 2 "" H 4950 2600 50  0001 C CNN
+F 3 "" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2600 4750 2500
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DB1A2
+P 4000 3350
+F 0 "J?" H 4000 3550 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 4000 3150 50  0000 C CNN
+F 2 "" H 4000 3350 50  0001 C CNN
+F 3 "" H 4000 3350 50  0001 C CNN
+	1    4000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DB216
+P 3950 4300
+F 0 "J?" H 3950 4500 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 3950 4100 50  0000 C CNN
+F 2 "" H 3950 4300 50  0001 C CNN
+F 3 "" H 3950 4300 50  0001 C CNN
+	1    3950 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DB26C
+P 5100 3150
+F 0 "J?" H 5100 3350 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 5100 2950 50  0000 C CNN
+F 2 "" H 5100 3150 50  0001 C CNN
+F 3 "" H 5100 3150 50  0001 C CNN
+	1    5100 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DB2BF
+P 5050 4500
+F 0 "J?" H 5050 4700 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 5050 4300 50  0000 C CNN
+F 2 "" H 5050 4500 50  0001 C CNN
+F 3 "" H 5050 4500 50  0001 C CNN
+	1    5050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x03_Female J?
+U 1 1 5A3DB380
+P 4100 5200
+F 0 "J?" H 4100 5400 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 4100 5000 50  0000 C CNN
+F 2 "" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0001 C CNN
+	1    4100 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02_Female J?
+U 1 1 5A3DB490
+P 4850 3450
+F 0 "J?" H 4850 3550 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 4850 3250 50  0000 C CNN
+F 2 "" H 4850 3450 50  0001 C CNN
+F 3 "" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02_Female J?
+U 1 1 5A3DB551
+P 4950 4200
+F 0 "J?" H 4950 4300 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 4950 4000 50  0000 C CNN
+F 2 "" H 4950 4200 50  0001 C CNN
+F 3 "" H 4950 4200 50  0001 C CNN
+	1    4950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02_Female J?
+U 1 1 5A3DB5C5
+P 6700 5000
+F 0 "J?" H 6700 5100 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 6700 4800 50  0000 C CNN
+F 2 "" H 6700 5000 50  0001 C CNN
+F 3 "" H 6700 5000 50  0001 C CNN
+	1    6700 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02_Female J?
+U 1 1 5A3DB645
+P 6700 2750
+F 0 "J?" H 6700 2850 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 6700 2550 50  0000 C CNN
+F 2 "" H 6700 2750 50  0001 C CNN
+F 3 "" H 6700 2750 50  0001 C CNN
+	1    6700 2750
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

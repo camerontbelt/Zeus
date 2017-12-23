@@ -1,0 +1,2 @@
+BoM
+Ref		Value		DigiKeyPN
